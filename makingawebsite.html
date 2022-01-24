@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Homepage</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Þórhallur Tryggvason</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="aboutme.html">About me</a></li>
+								<li><a href="projects.html">Projects</a></li>
+								<!--<li><a href="#">Log In</a></li>
+								<li><a href="#">Sign Up</a></li> -->
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Before starting.</h3>
+									<p>To get started I had to start by making a <a href="https://github.com/">GitHub</a> account. Next we will be installing <a href="https://brackets.io/">Brackets</a>, version v2.0.1 in my case. Next step was to install <a href="https://git-scm.com/downloads">Git</a>, it only takes a few minutes to install both these programs and they are very handy when making a website. Next step was to get the Git extension in Brackets. To do this you go to File>Extension Manager and search for Git Integration.</p>
+                                        <a href="#" class="image"><img src="images/makingawebsite/git_extension.jpg" alt="" /></a>
+                                    <p>Be sure that Git Integration is enabled after downloading. Now is a good time to take use of the <u>Getting started</u> feature in Brackets. We can test things out on a .html file already provided with Brackets.</p>
+                                    <h3 class="major">Find a template or make your own.</h3>
+									<p>There are plenty of exciting templates to choose from online so my suggestion is to search for free ones. I do not have the knowledge to start from scratch so I headed on to <a href="https://html5up.net/">HTML5 UP!</a> to find an acceptable template. There were many stylish templates to choose from and it took some time to decide. I ended up choosing Solid State.</p> 
+                                    <ul class="actions">
+								        <li><a href="#" class="button">HTML5 <span>UP</span></a>
+                                        </li>
+                                    </ul>
+									<h3 class="major">Setting up the website.</h3>
+									<p>As always when it comes to programming in a new language I started by messing around with the code and using inspect element to guide me. After loads of deleting and finicking around I was pretty happy with the foundation. The template was split into three html files for different parts of the site. I started with the index and used that as a template for the rest,  it saves time in the long run. After that I made a <u>public</u> repository at Github, then I opened up Git in the website local folder. Easiest way to do that is to <b>right click</b> in the website folder and selecting <b>Git Bash Here</b>. When Git has finished loading I used a code presented when I made the Github Repository, I also had to add my email and username to the config: </p>
+										<pre><code>echo "# heimasida" >> README.md
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/gvendurinn/heimasida.git
+git push -u origin main</code></pre>
+                                    <p>Last step is pretty simple, go to Github Pages from your account and selecting the correct branch and folder from the source tab.  </p>
+                                    <a href="#" class="image"><img src="images/makingawebsite/github_pages.jpg" alt=""/></a>
+                                    <p>You should now be able to see a message saying your website is up and running and a provided link.</p>
+                                    <h3 class="major">Problems on the way.</h3>
+                                    <p>It turned out I made a website a few years back that I forgot about and somewhere on the way I accidentally changed the branch in GitHub pages. My page stopped working at that point and it took some time finding the problem. The fix was easy enough, just had to try changing both the branch and folder until it went back up.</p>
+								</div>
+							</div>
+
+                
+                
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Contact</h2>
+							<!--<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form> -->
+							<ul class="contact">
+								<!--<li class="icon solid fa-home">
+									Untitled Inc<br />
+									1234 Somewhere Road Suite #2894<br />
+									Nashville, TN 00000-0000
+								</li>
+								<li class="icon solid fa-phone">(000) 000-0000</li>-->
+								<li class="icon solid fa-envelope"><a href="#">tht42@hi.is</a></li>
+								<!--<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>-->
+								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/thorhallr</a></li>
+								<li class="icon brands fa-instagram"><a href="#">instagram.com/thorhallr</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
