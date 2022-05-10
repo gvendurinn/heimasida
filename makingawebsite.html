@@ -42,6 +42,15 @@
 						<!-- Content -->
 							<div class="wrapper">
 								<div class="inner">
+                                    <h3 class="major">Website criteria.</h3>
+                                    <ul>
+                                        <li>All buttons and features need to work</li>
+                                        <li>Special "Projects" subpage with course work</li>
+                                        <li>Information or "About me" subpage and preparation for a portfolio</li>
+                                        <li>Aesthetically pleasing design</li>
+                                        <li>Detailed information on each and every project such that it could be replicated again in the future</li>
+                                        <li>Contact information and social media links</li>
+                                    </ul>
 
 									<h3 class="major">Before starting.</h3>
 									<p>To get started I had to start by making a <a href="https://github.com/">GitHub</a> account. Next we will be installing <a href="https://brackets.io/">Brackets</a>, version v2.0.1 in my case. Next step was to install <a href="https://git-scm.com/downloads">Git</a>, it only takes a few minutes to install both these programs and they are very handy when making a website. Next step was to get the Git extension in Brackets. To do this you go to File>Extension Manager and search for Git Integration.</p>
@@ -54,7 +63,9 @@
                                         </li>
                                     </ul>
 									<h3 class="major">Setting up the website.</h3>
-									<p>As always when it comes to programming in a new language I started by messing around with the code and using inspect element to guide me. After loads of deleting and finicking around I was pretty happy with the foundation. The template was split into three html files for different parts of the site. I started with the index and used that as a template for the rest,  it saves time in the long run. After that I made a <u>public</u> repository at Github, then I opened up Git in the website local folder. Easiest way to do that is to <b>right click</b> in the website folder and selecting <b>Git Bash Here</b>. When Git has finished loading I used a code presented when I made the Github Repository, I also had to add my email and username to the config: </p>
+                                    <p>As always when it comes to programming in a new language I started by messing around with the code and using inspect element to guide me. After loads of deleting and finicking around I was pretty happy with the foundation. Most of the work was removing everything I didn't want on the website. The sample html files might have been more useful for a shopping website. It seems like the sample website mostly used &lt;h3&gt; for headings so I continued on using that, also &lt;p&gt; for text and &lt;li&gt; for listed items. <a href=https://devpractical.com/display-html-tags-as-plain-text/#:~:text=You%20can%20show%20HTML%20tags,but%20you%20cannot%20see%20them.>Here</a> you can see how to write html as text instead of commands. I didn't do many changes to the sections or the basic structure of the website. When I was in doubt I commented out one line at a time and refreshed the page to see the changes. Here you can see how I changed the items in the Menu by commenting out what I didn't need.</p>
+                                    <a href="#" class="image"><img src="images/makingawebsite/commenting_out.png" alt="" /></a>
+                                    <p>The template was split into three html files for different parts of the site. I started with the index and used that as a template for the rest, it saves time in the long run. After that I made a <u>public</u> repository at Github, then I opened up Git in the website local folder. Easiest way to do that is to <b>right click</b> in the website folder and selecting <b>Git Bash Here</b>. When Git has finished loading I used a code presented when I made the Github Repository, I also had to add my email and username to the config: </p>
 										<pre><code>echo "# heimasida" >> README.md
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
@@ -64,11 +75,12 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/gvendurinn/heimasida.git
 git push -u origin main</code></pre>
-                                    <p>Last step is pretty simple, go to Github Pages from your account and selecting the correct branch and folder from the source tab.  </p>
+                                    <p>To insert code like the one above, use pre and code as shown here: &lt;pre&gt;&lt;code&gt;<u>INSERT CODE</u>&lt;/code&gt;&lt;/pre&gt;. Last step is pretty simple, go to Github Pages from your account and selecting the correct branch and folder from the source tab.  </p>
                                     <a href="#" class="image"><img src="images/makingawebsite/github_pages.jpg" alt=""/></a>
-                                    <p>You should now be able to see a message saying your website is up and running and a provided link.</p>
+                                    <p>You should now be able to see a message saying your website is up and running and a provided link. Interested parties can check out my repository at <a href="https://github.com/gvendurinn/heimasida">Github.</a> Feel free to use the html files as templates if you please.</p>
                                     <h3 class="major">Problems on the way.</h3>
-                                    <p>It turned out I made a website a few years back that I forgot about and somewhere on the way I accidentally changed the branch in GitHub pages. My page stopped working at that point and it took some time finding the problem. The fix was easy enough, just had to try changing both the branch and folder until it went back up.</p>
+                                    <p>It turned out I made a website a few years back that I forgot about and somewhere on the way I accidentally changed the branch in GitHub pages. My page stopped working at that point and it took some time finding the problem. The fix was easy enough, just had to try changing both the branch and folder until it went back up.
+                                    Probably the most finicky thing about making the website was choosing the correct commands and dimensions for each and every photo. The sample website used both &lt;a href&gt; and &lt;div class&gt; and I still don't have any idea of what the difference is.</p>
 								</div>
 							</div>
 
